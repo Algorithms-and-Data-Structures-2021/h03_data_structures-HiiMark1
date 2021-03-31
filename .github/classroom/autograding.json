@@ -1,11 +1,154 @@
 {
   "tests": [
     {
-      "name": "Run all tests",
-      "setup": "",
-      "run": "cd build && ctest -VV",
-      "timeout": 10,
-      "points": 0
+      "name": "TestCase 01: ArrayStack constructor",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"create empty array stack\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 02: ArrayStack::Push(e)",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"push elements into array stack\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 03: ArrayStack::Pop()",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"pop elements from array stack\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 04: ArrayStack::Clear()",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"clear array stack\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 05: LinkedStack::Push(e)",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"push elements into linked stack\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 06: LinkedStack::Pop()",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"pop elements from linked stack\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 07: LinkedStack::Clear()",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"clear linked stack\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 08: LinkedQueue::Enqueue(e)",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"enqueue linked queue\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 09: LinkedQueue::Dequeue()",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"dequeue linked queue\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 10: LinkedQueue::Clear()",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"clear linked queue\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 11: LinkedDequeue::Enqueue(e)",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"enqueue linked deque\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 12: LinkedDequeue::Dequeue()",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"dequeue linked deque\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 13: LinkedDequeue::EnqueueFront(e)",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"enqueue front linked deque\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 14: LinkedDequeue::DequeueBack()",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"dequeue back linked deque\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestCase 15: LinkedDequeue::Clear()",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && cmake --build .",
+      "run": "cd build && ctest -VVV -R \"clear linked deque\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
     }
   ]
 }
